@@ -1,0 +1,28 @@
+# vitepress files
+docs/.vitepress/dist/
+docs/.vitepress/cache
+.nojekyll
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# MacOS Desktop Services Store
+.DS_Store
+
+# Log files
+*.log
+
+# Typescript build info
+*.tsbuildinfo
+
+#webgpu
+/webgpu/**/index.html
+/webgpu/**/index.pre.html
+/webgpu/**/*.idl
+
+#editor
+.idea
+.vitepress
+.vscode
