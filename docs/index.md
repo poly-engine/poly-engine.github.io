@@ -30,7 +30,7 @@ features:
 
 <div class="heroDemos">
   <div class="container">
-    <Demo src="/examples/pbr.ts" :code="false" :height="450"></Demo>
+    <Demo src="/examples/test.js" :code="false" :height="450"></Demo>
     <Demo src="/examples/pbr2.ts" :code="false" :height="450"></Demo>
   </div>
 </div>

@@ -36,6 +36,7 @@
             if (location.hostname.match(/orillusion/)) {
                 Promise.all([fetch(location.search.slice(1)).then((r) => r.text()), fetch(location.search.slice(1).replace('.ts', '.js')).then((r) => r.text())]).then((res) => createScript(res[1], res[0]))
             } else {
+                let ts = location.search.slice(1).endsWith('.ts');
                 Promise.all([
                     fetch(location.search.slice(1)).then((r) => r.text()),
                     new Promise(async (r) => {
@@ -46,8 +47,16 @@
                         check()
                     })
                 ]).then(async (res) => {
-                    const js = await res[1].transform(res[0], { loader: 'ts' })
-                    createScript(js.code, res[0])
+                    if(ts){
+                        const js = await res[1].transform(res[0], { loader: 'ts' })
+                        createScript(js.code, res[0])
+                    }
+                    else{
+                        const js = res[0];
+                        createScript(js, res[0])
+                    }
+                    // const js = await res[1].transform(res[0], { loader: 'ts' })
+                    // createScript(js.code, res[0])
                 })
             }
             function createScript(js, ts) {
