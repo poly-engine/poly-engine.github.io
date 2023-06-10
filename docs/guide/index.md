@@ -1,9 +1,7 @@
 <!-- <Logo :animation="false"></Logo> -->
-<div data-v-72cc4481="" class="image-container">
-<div data-v-72cc4481="" class="image-bg"></div>
-<img data-v-262f00eb="" class="VPImage dark image-src" src="/images/logo512.png" alt="">
-<img data-v-262f00eb="" class="VPImage light image-src" src="/images/logo512.png" alt="">
-</div>
+<img class="VPImage light image-src" src="/images/logo512.png" alt="" width="256" height="256" style="display: block; margin: 0 auto">
+
+---
 
 `PolyEngine` 引擎是一款完全支持 [WebGL](https://www.khronos.org/webgl/) 和 [WebGPU](https://www.orillusion.com/webgpu.html) 标准的轻量级渲染引擎。基于最新的 `Web` 图形API标准，我们做了大量的探索和尝试，实现了很多曾经在 `Web` 中很难实现或者根本实现不了的技术和功能。我们自己从以下几个方面对引擎的架构和功能特点做出了总结。
 
