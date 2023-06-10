@@ -6,8 +6,8 @@ titleTemplate: 下一时代 Web3D 引擎
 hero:
   name: PolyEngine
   image:
-    light: /images/logo_black.png
-    dark: /images/logo_white.png
+    light: /images/logo512.png
+    dark: /images/logo512.png
   text: 下一时代 Web3D 引擎
   tagline: 简单易用，功能强大，为 Web3D 提供完善开发工具
   actions:
@@ -34,4 +34,4 @@ features:
     <Demo src="/examples/pbr2.ts" :code="false" :height="450"></Demo>
   </div>
 </div>
-<Logo :homeHero="true"></Logo>
+<!-- <Logo :homeHero="true"></Logo> -->
